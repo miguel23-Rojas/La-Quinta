@@ -64,7 +64,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    	<li><a href="team.html">¿Quién somos?</a></li>
 						    	
 						    	<li><a href="shop.html">Sucursales</a></li>
-								<li><a href="contact.html">Contact</a></li>								
+								<li><a href="contact.html">Contacto</a></li>								
 								<div class="clear"></div>
 							</ul>
 							<script type="text/javascript" src="js/responsive-nav.js"></script>
