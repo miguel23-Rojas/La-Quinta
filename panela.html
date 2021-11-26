@@ -1,0 +1,338 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Comprar </title>
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css" />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+     <!----details-product-slider--->
+				<!-- Include the Etalage files -->
+					<link rel="stylesheet" href="css/etalage.css">
+					<script src="js/jquery.etalage.min.js"></script>
+				<!-- Include the Etalage files -->
+				<script>
+						jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 300,
+								thumb_image_height: 400,
+								
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+				</script>
+				<!----//details-product-slider--->	
+</head>
+<body >
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo234.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+								<li><a href="accesibilidad.html"><img src="images/acce.png" width="30" height="30" class="d-inline-block align-text-top"alt=""/></a></li>
+						    	<li><a href="shop.html">Productos</a></li>
+						    	<li><a href="team.html">¿Quién somos?</a></li>
+								
+						    	
+						    	<li><a href="shop.html">Sucursales</a></li>
+								<li><a href="contact.php">Contact</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				   <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+				<button class="snipcart-checkout" style="background-color:#2b78e4; border: #2b78e4;">
+					<a class="active-icon c1"> </a>
+</button>
+
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+	  
+     <div class="main">
+		 <!--Volver atrás botón-->
+	  <a href="javascript: history.go(-1)" class='move moveLeft'   type="button" ><img src="./images/flecha-hacia-atras.png"width="66px" height="66px" ><a>
+		<!--Volver atrás botón-->
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 single_left">
+				   <div class="single_image">
+					     <ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="images/pan.png" />
+									<img class="etalage_source_image" src="images/pan.png" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/pic2.png" />
+								<img class="etalage_source_image" src="images/pic2.png" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/nutpanela.png" />
+								<img class="etalage_source_image" src="images/nutpanela.png" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/cert inoc.jfif" />
+								<img class="etalage_source_image" src="images/cert inoc.jfif" />
+							</li>
+
+						</ul>
+					    </div>
+						<div></div>
+				        <!-- end product_slider -->
+				        <div class="single_right">
+				        	<h3>Queso Panela </h3>
+				        	<p class="m_10">El queso panela es un queso fresco, suave y blanco de leche pasteurizada de vaca, no requiere maduración, se produce de cuajadas semi desueradas.</p>
+				        	<ul class="options">
+								<h4 class="m_12">Disponible en:</h4>
+								<li>200 g</li>
+								<li>500 g</li>
+								<li>1 k</a></li>
+							</ul>
+							<div class="btn_form">
+							   <form>
+								<button class="snipcart-add-item"
+								style="background-color: black; color:white;"
+  data-item-id="starry-night-p"
+  data-item-price="105.00"
+  data-item-url="/panela"
+  data-item-description="El queso panela es un queso fresco, suave y blanco de leche pasteurizada de vaca, no requiere maduración, se produce de cuajadas semi desueradas"
+  data-item-image="IMAGES/pan.png"
+  data-item-name="QUESO Panela"
+  data-item-custom1-name="Cantidad"
+  data-item-custom1-options="200 G|500 G[+39.00]|1 KG[+90.00]">
+  COMPRAR
+</button>
+							</form>
+							</div>
+							<div class="social_buttons">
+								<h4>95 Items</h4>
+								<button type="button" class="btn1 btn1-default1 btn1-twitter" onclick="">
+					              <i class="icon-twitter"></i> Tweet
+					            </button>
+					            <button type="button" class="btn1 btn1-default1 btn1-facebook" onclick="">
+					              <i class="icon-facebook"></i> Share
+					            </button>
+					             <button type="button" class="btn1 btn1-default1 btn1-google" onclick="">
+					              <i class="icon-google"></i> Google+
+					            </button>
+					            <button type="button" class="btn1 btn1-default1 btn1-pinterest" onclick="">
+					              <i class="icon-pinterest"></i> Pinterest
+					            </button>
+					        </div>
+				        </div>
+				        <div class="clear"> </div>
+				</div>
+				
+			</div>		
+			<div class="desc">
+			   	<h4>Descripción</h4>
+<p>
+	El queso panela es un queso fresco, suave y blanco de leche pasteurizada de vaca, no requiere maduración, se produce de cuajadas semi desueradas.Servido más a menudo como parte de una bandeja de aperitivo o como bocado.
+Absorbe otros sabores fácilmente, y se reviste a veces con una pasta de ajo y chile, es muy utilizado en diversas comidas mexicanas, como en algunas variantes de preparación del famoso guacamole.
+</p>			</div>
+
+	<hr>
+	<div style="text-align: center;">
+		<video width="640" height="480" muted autoplay controls >
+				
+			<source src="quesoOaxaca.mp4" type="video/mp4">
+			
+		</video>
+		</div>
+		<hr>
+			<div class="row">
+				<h4 class="m_11">OTROS PRODUCTOS RELACIONADOS</h4>
+				<div class="col-md-4 product1">
+					<img src="images/s1.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc"><a href="single.html">
+						</a><h3><a href="single.html"></a><a href="#">Queso Panela</a></h3>
+						<p>El queso panela es un queso fresco, suave y blanco de leche pasteurizada de vaca, no requiere maduración, se produce de cuajadas semi desueradas.​​ Servido más a menudo como parte de una bandeja de aperitivo o como bocado </p>
+						<span class="reducedfrom">$100.00</span>
+						<span class="actual">$88.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">Agregar al carrito</a></li>
+							<li class="shop_btn"><a href="#">Leer Mas</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+				<div class="col-md-4 product1">
+					<img src="images/s2.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc"><a href="single.html">
+						</a><h3><a href="single.html"></a><a href="#">Queso Ranchero</a></h3>
+						<p>Existen tantos tipos de quesos rancheros, como ranchos productores de leche o quesos hay en el país. ... Se elabora con leche de vaca, principalmente, aunque también se produce con leche de cabra o una mezcla de ambas.</p>
+						<span class="reducedfrom">$125.00</span>
+						<span class="actual">$112.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">Agregar al carrito</a></li>
+							<li class="shop_btn"><a href="#">Leer mas</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+				<div class="col-md-4">
+					<img src="images/s3.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc"><a href="single.html">
+						</a><h3><a href="single.html"></a><a href="#">Queso Oxaca</a></h3>
+						<p>Se trata de una variante de queso blanco y blando de origen mexicano, en concreto de los Valles Centrales del estado de Oaxaca. En varias regiones de Oaxaca se le conoce como quesillo.</p>
+						<span class="reducedfrom">$96.00</span>
+						<span class="actual">$72.00</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">Agregar al carrito</a></li>
+							<li class="shop_btn"><a href="#">Leer mas</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+			</div>	
+	     </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Productos</h4>
+						<li><a href="#">Quesos Oaxaca</a></li>
+						<li><a href="#">Quesos Panela</a></li>
+						<li><a href="#">Quesos Ranchero</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Acerca de</h4>
+						<li><a href="#">¿Quién somos?</a></li>
+						<li><a href="#">Preguntas frecuentes</a></li>
+						
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Atencion al cliente</h4>
+						<li><a href="#">Contáctanos</a></li>
+						<li><a href="#">Envío y seguimiento de pedidos </a></li>
+						<li><a href="#">Devoluciones fáciles </a></li>
+						
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Newsletter</h4>
+						<div class="footer_search">
+						   <form>
+							<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+							<input type="submit" value="Go">
+						   </form>
+						</div>
+						<ul class="social">	
+						  <li class="facebook"><a href="#"><span> </span></a></li>
+						  <li class="twitter"><a href="#"><span> </span></a></li>
+						  <li class="instagram"><a href="#"><span> </span></a></li>	
+						  <li class="pinterest"><a href="#"><span> </span></a></li>	
+						  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						</ul>
+						   
+					</ul>
+				</div>
+			</div>
+			<div class="row footer_bottom">
+				<div class="copy">
+				   
+				</div>
+				  <dl id="sample" class="dropdown">
+					<dt><a href="#"><span>Change Region</span></a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span class="value">AS</span></a></li>
+							<li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
+							<li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span class="value">NZ</span></a></li>
+							<li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
+							<li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span class="value">UK</span></a></li>
+							<li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
+						</ul>
+					 </dd>
+					 </dl>
+			   </div>
+		</div>
+	</div>
+	<script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="OTk0ZmRmNTEtMGY2Mi00MWMwLWJlMTEtMTE4NjZlYTIzMzk3NjM3NDE0MzA5NjUzNzQ0MjU3"></div>
+</body>	
+</html>
