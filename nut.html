@@ -11,12 +11,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css" />
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="modulos/stylesheets/style.css">
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery.min.js"></script>
+
 <script type="text/javascript">
         $(document).ready(function() {
             $(".dropdown img.flag").addClass("flagvisibility");
@@ -124,148 +128,113 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	  </div>
 	  
 
-     <div class="main">	 
-		  <!--Volver atrás botón-->
+     <div class="main">	   
+         <div class="jumbotron">
+			  <!--Volver atrás botón-->
 	  <a href="javascript: history.go(-1)" class='move moveLeft'   type="button" ><img src="./images/flecha-hacia-atras.png"width="66px" height="66px" ><a>
 		<!--Volver atrás botón-->
-      <div class="shop_top">
+            <div style="text-align: center;">
+                <h2>Tabla nutrimental</h2>
+			
+
+            </div>
+			
+
+            <table class="table table-striped" >
+                <thead >
+                  <tr >
+                    <th scope="col">#</th>
+                    <th scope="col">Queo Oaxaca</th>
+                    <th scope="col">Queso panela</th>
+                    <th scope="col">Queso Ranchero</th>
+                    <th scope="col">Queso Artesanal Oaxaca</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Energía(kcal) 260</td>
+                    <td>Energía(kcal) 260</td>
+                    <td>Energía(kcal) 280</td>
+                    <td>Energía(kcal) 260</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Proteínas(g) 21</td>
+                    <td>Proteínas(g) 15</td>
+                    <td>Proteínas(g) 16</td>
+                    <td>Proteínas(g) 21</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Grasas totales (g) 19</td>
+                    <td>Grasas totales (g) 21</td>
+                    <td>Grasas totales (g) 23</td>
+                    <td>Grasas totales (g) 19</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Grasas saturadas (g) 12</td>
+                    <td>Grasas saturadas (g) 9</td>
+                    <td>Grasas saturadas (g) 14</td>
+                    <td>Grasas saturadas (g) 12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Grasas insaturadas (g) 7</td>
+                    <td>Grasas insaturadas (g) 13</td>
+                    <td>Grasas insaturadas (g) 9</td>
+                    <td>Grasas insaturadas (g) 7</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Grasas trans (gmg) 250</td>
+                    <td>Grasas trans (gmg) 2</td>
+                    <td>Grasas totales (gmg) 300</td>
+                    <td>Grasas totales (gmg) 250</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Carbohidratos (g) 3</td>
+                    <td>Carbohidratos (g) 3</td>
+                    <td>Grasas totales (g) 2</td>
+                    <td>Grasas totales (g) 3</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Sodio (mg) 730</td>
+                    <td>Sodio (mg) 410</td>
+                    <td>Grasas totales (mg) 540</td>
+                    <td>Grasas totales m(g) 730</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Fibra Dietetica (g) 0</td>
+                    <td>Fibra Dietetica (g) 0</td>
+                    <td>Grasas totales (g) Menos de 1</td>
+                    <td>Grasas totales (g) 0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>Azúcares (g) Menos de 1</td>
+                    <td>Azúcares (g) Menos de 2</td>
+                    <td>Azúcares (g) 2</td>
+                    <td>Azúcares (g) Menos de 1</td>
+                  
+                </div>
+                <hr>
+            </tr>
+                </tbody>
+              </table>
+         </div>
+		
 		<div class="container">
-			<div class="row">
-				<div class="col-md-9 single_left">
-				   <div class="single_image">
-					     <ul id="etalage">
-							<li>
-								<a href="optionallink.html">
-									<img class="etalage_thumb_image" src="images/s2.jpg" />
-									<img class="etalage_source_image" src="images/s2.jpg" />
-								</a>
-							</li>
-							<li>
-								<img class="etalage_thumb_image" src="images/pic5.png" />
-								<img class="etalage_source_image" src="images/pic5.png" />
-							</li>
-							<li>
-								<img class="etalage_thumb_image" src="images/cert inoc.jfif" />
-								<img class="etalage_source_image" src="images/cert inoc.jfif" />
-							</li>
 
-						</ul>
-					    </div>
-						<div></div>
-				        <!-- end product_slider -->
-				        <div class="single_right">
-				        	<h3>Queso Ranchero </h3>
-				        	<p class="m_10">Nombre genérico que se aplica a quesos frescos elaborados prácticamente en todo el país. Existen tantos tipos de quesos rancheros, como ranchos productores de leche o quesos hay en el país. Casi siempre se trata de un queso fresco del estilo del panela o similar.</p>
-				        	<a href="./nut.html"><button type="button" class="btn btn-info">Información nutrimental</button></a>
-							<hr>
-							<ul class="options">
-								<h4 class="m_12">Disponible en:</h4>
-								<li>200 g</li>
-								<li>500 g</li>
-								<li>1 k</a></li>
-							</ul>
-							<div class="btn_form">
-							   <form>
-								<button class="snipcart-add-item"
-								style="background-color: black; color:white;"
-  data-item-id="starry-night-r"
-  data-item-price="30.00"
-  data-item-url="/ranchero"
-  data-item-description="Nombre genérico que se aplica a quesos frescos elaborados prácticamente en todo el país. Existen tantos tipos de quesos rancheros, como ranchos productores de leche o quesos hay en el país. Casi siempre se trata de un queso fresco del estilo del panela o similar."
-  data-item-image="IMAGES/s2.JPG"
-  data-item-name="QUESO RANCHERO"
-  data-item-custom1-name="Cantidad"
-  data-item-custom1-options="200 G|500 G[+15.00]|1 KG[+65.00]">
-  COMPRAR
-</button>
-							</form>
-							</div>
-							<div class="social_buttons">
-								<h4>95 Items</h4>
-								<button type="button" class="btn1 btn1-default1 btn1-twitter" onclick="">
-					              <i class="icon-twitter"></i> Tweet
-					            </button>
-					            <button type="button" class="btn1 btn1-default1 btn1-facebook" onclick="">
-					              <i class="icon-facebook"></i> Share
-					            </button>
-					             <button type="button" class="btn1 btn1-default1 btn1-google" onclick="">
-					              <i class="icon-google"></i> Google+
-					            </button>
-					            <button type="button" class="btn1 btn1-default1 btn1-pinterest" onclick="">
-					              <i class="icon-pinterest"></i> Pinterest
-					            </button>
-					        </div>
-				        </div>
-				        <div class="clear"> </div>
-				</div>
-				
-			</div>		
-			<div class="desc">
-			   	<h4>Descripción</h4>
-<p>
-	Nombre genérico que se aplica a quesos frescos elaborados prácticamente en todo el país. Existen tantos tipos de quesos rancheros, como ranchos productores de leche o quesos hay en el país. Casi siempre se trata de un queso fresco del estilo del panela o similar. Se elabora con leche de vaca, principalmente, aunque también se produce con leche de cabra o una mezcla de ambas.
-</p>			</div>
-<hr>
-<div style="text-align: center;">
-<h3>Conoce nuestros quesos</h3>
-
-</div>
-			<div style="text-align: center;">
-			<video width="640" height="480" muted autoplay controls >
-					
-				<source src="Quesopanela.mp4" type="video/mp4">
-				
-			</video>
-			</div>
-			<hr>
-			<div class="row">
-				<h4 class="m_11">OTROS PRODUCTOS RELACIONADOS</h4>
-				<div class="col-md-4 product1">
-					<img src="images/s1.jpg" class="img-responsive" alt=""/> 
-					<div class="shop_desc"><a href="single.html">
-						</a><h3><a href="single.html"></a><a href="#">Queso Panela</a></h3>
-						<p>El queso panela es un queso fresco, suave y blanco de leche pasteurizada de vaca, no requiere maduración, se produce de cuajadas semi desueradas.​​ Servido más a menudo como parte de una bandeja de aperitivo o como bocado </p>
-						<span class="reducedfrom">$100.00</span>
-						<span class="actual">$88.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Agregar al carrito</a></li>
-							<li class="shop_btn"><a href="#">Leer Mas</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</div>
-				<div class="col-md-4 product1">
-					<img src="images/s2.jpg" class="img-responsive" alt=""/> 
-					<div class="shop_desc"><a href="single.html">
-						</a><h3><a href="single.html"></a><a href="#">Queso Ranchero</a></h3>
-						<p>Existen tantos tipos de quesos rancheros, como ranchos productores de leche o quesos hay en el país. ... Se elabora con leche de vaca, principalmente, aunque también se produce con leche de cabra o una mezcla de ambas.</p>
-						<span class="reducedfrom">$125.00</span>
-						<span class="actual">$112.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Agregar al carrito</a></li>
-							<li class="shop_btn"><a href="#">Leer mas</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</div>
-				<div class="col-md-4">
-					<img src="images/s3.jpg" class="img-responsive" alt=""/> 
-					<div class="shop_desc"><a href="single.html">
-						</a><h3><a href="single.html"></a><a href="#">Queso Oxaca</a></h3>
-						<p>Se trata de una variante de queso blanco y blando de origen mexicano, en concreto de los Valles Centrales del estado de Oaxaca. En varias regiones de Oaxaca se le conoce como quesillo.</p>
-						<span class="reducedfrom">$96.00</span>
-						<span class="actual">$72.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Agregar al carrito</a></li>
-							<li class="shop_btn"><a href="#">Leer mas</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</div>
-			</div>	
-	     </div>
-	   </div>
-	  </div>
+		</div>
+    </div>
+    <hr>
+   
+    
 	  <div class="footer">
 		<div class="container">
 			<div class="row">
@@ -335,6 +304,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 	<script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"></script>
-    <div hidden id="snipcart" data-api-key="OTk0ZmRmNTEtMGY2Mi00MWMwLWJlMTEtMTE4NjZlYTIzMzk3NjM3NDE0MzA5NjUzNzQ0MjU3"></div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min
+	.js"></script>
+	<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="./stylesheets/style.css">
+	<div hidden id="snipcart" data-api-key="OTk0ZmRmNTEtMGY2Mi00MWMwLWJlMTEtMTE4NjZlYTIzMzk3NjM3NDE0MzA5NjUzNzQ0MjU3"></div>
 </body>	
 </html>
