@@ -10,6 +10,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>Free Snow Bootstrap Website Template | Contact :: w3layouts</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/estilo.css">
+<!--Icon-Font-->
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -46,6 +49,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             });
         });
      </script>
+<script>
+    var tgs = new Array('div','td','tr','th','li','h6','p','h4','a','h1','button');
+
+    var szs = new Array('xx-small','x-small','small','medium','large','x-large','xx-large');
+    var startSz = 2;
+
+    function ts(trgt,inc)
+    {
+        if(!document.getElementById) return
+        var d = document,cEl = null,sz = startSz,i,j,cTags;
+
+        sz += inc;
+        if(sz < 0) sz = 0;
+        if(sz > 6) sz = 6;
+        startSz = sz;
+
+        if(!(cEl = d.getElementById(trgt))) cEl = d.getElementsByTagName(trgt)[0];
+
+        cEl.style.fontSize = szs[sz];
+
+        for(i = 0; i < tgs.length; i++)
+        {
+            cTags = cEl.getElementsByTagName(tgs[i]);
+            for(j = 0; j < cTags.length; j++) cTags[j].style.fontSize = szs[sz];
+        }
+    }
+  </script>
  </head>
  <body style="background-image:url('images/findex.jpg')">
 	<div class="header">
@@ -59,7 +89,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					 <div class="menu">
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
 						    <ul class="nav" id="nav">
-								<li><a href="accesibilidad.html"><img src="images/acce.png" width="30" height="30" class="d-inline-block align-text-top"alt=""/></a></li>
 						    	<li><a href="shop.html">Productos</a></li>
 						    	<li><a href="team.html">¿Quién somos?</a></li>
 						    	
@@ -122,9 +151,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="row">
 				<div class="col-md-7">
-				  <div class="map">
-					<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:12px"></a></small>
-				  </div>
+					<div class="map">
+				  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.9890238576463!2d-100.39778758604166!3d20.629304206672735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35afdcd97cdb3%3A0xba9d72f8b9141653!2sProductos%20L%C3%A1cteos%20La%20Quinta%20S.A.%20de%20C.V.%20%2F%20Quesos%20La%20Quinta%20%2F%20Planta%20Qro1!5e0!3m2!1ses-419!2smx!4v1637956695056!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				  	</div>
 				</div>
 				<div class="col-md-5">
 					<p class="m_8">Somos una empresa Queretana con más de 30 años de crear productos lácteos de calidad para toda la Familia. Disfruta de quesos la quinta y mas sin salir de casa ¡ahora es muy facil! </p>
@@ -144,7 +173,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				  <form method="post">
 					<div class="to">
                      	<input type="text" placeholder="name" name="name" required="">
-						<input type="text" placeholder="email" name="email" required="" value="tushorodriguezf@gmail.com" disabled>
+						<input type="text" placeholder="email" name="email" required="" value="rojashernandezmiguel237@gmail.com" disabled>
 						<input type="text" placeholder="tema" name="tema" required="">
 					</div>
 					<div class="text">
@@ -163,6 +192,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	     </div>
 	   </div>
 	  </div>
+	  <div class="containerr">
+	<input type="checkbox" id="btn-mas">
+	<div class="redes">
+		<a href="javascript:ts('body',1)" class="fa fa-zoom-in">T+</a>
+		<a href="javascript:ts('body',-1)" class="fa fa-zoom-out">T-</a>
+	</div>
+	<div class="btn-mas">
+		<label for="btn-mas" class="fa fa-universal-access"></label>
+	</div>
+</div>
 	  <div class="footer">
 		<div class="container">
 			<div class="row">
