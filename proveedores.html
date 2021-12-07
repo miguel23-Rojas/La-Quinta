@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>La Quinta </title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/proveedores.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.easydropdown.js"></script>-->
+<!--start slider -->
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+<script src="js/proveedores.js"></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min
+.js"></script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body style="background-image:url('images/fondoo.jpg')">
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo234.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+								<li><a href="accesibilidad.html"><img src="images/acce.png" width="30" height="30" class="d-inline-block align-text-top"alt=""/></a></li>
+						    	<li><a href="shop.html">Productos</a></li>
+						    	<li><a href="team.html">¿Quién somos?</a></li>
+						    	
+						    	<li><a href="proveedores.html">Proveedores</a></li>
+								<li><a href="contact.php">Contacto</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				      <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+						<!----//search-scripts---->
+				    <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						   <div class="clear"></div>
+						  <li class="list_img"><img src="images/1.jpg" alt=""/></li>
+						  <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
+                          $12.00</span></li>
+						  <div class="login_buttons">
+							 <div class="check_button"><a href="checkout.html">Check out</a></div>
+							 <div class="login_button"><a href="login.html">Login</a></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		           <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+		
+	</div>
+	<br>
+    <!--Cards proveedores-->
+    <div class="cont-pro-card">
+    <h1 id="tit-prov">Proveedores</h1>
+    
+    <p id="prov-p">Ofrecer a nuestros clientes un surtido que responda siempre a sus necesidades con Precios Bajos Todos los Días es posible gracias a nuestros proveedores.</p>
+
+    <section class="wrapper">
+        <div class="container">
+        
+        <div class="row">
+       <div class="col-md-4"><div class="card text-white card-has-bg click-col" style="background-image:url('https://i.pinimg.com/originals/c0/6b/33/c06b335473f84439cb35a651ad5f866a.jpg');">
+               <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+              <div class="card-img-overlay d-flex flex-column">
+               <div class="card-body">
+                  <small class="card-meta mb-2">Forma parte de nuestro equipo</small>
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="aplicar.html" >Cómo aplicar?</a></h4>
+                <!-- <small><i class="far fa-clock"></i> October 15, 2020</small>-->
+                </div>
+                <div class="card-footer">
+                 <div class="media">
+        <img class="mr-3 rounded-circle" src="images/la-qui-lo.jpg" alt="Generic placeholder image" style="max-width:50px">
+        <div class="media-body">
+          <h6 class="my-0 text-white d-block">La Quinta</h6>
+           <small>@QuesoLaQuinta</small>
+        </div>
+      </div>
+                </div>
+              </div>
+            </div></div>
+           <div class="col-md-4"><div class="card text-white card-has-bg click-col" style="background-image:url('https://lh3.googleusercontent.com/proxy/tOX4HFTNIzXBByI9M9gj-HcCX6VLgqiUQT7j5Y_7hWSS_VMXePqekv4f76IQenD6KhxEC_MdRO3Iaphgl4wsbfjtf1PjozJMvwurdpdcm31-IHSHyStaZSsY0CeMTko0ZEI8EvOE3ob9-0hrsg');">
+               <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+              <div class="card-img-overlay d-flex flex-column">
+               <div class="card-body">
+                  <small class="card-meta mb-2">¡Conocenos!</small>
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">Atención a Proveedores</a></h4>
+                 <!-- <small><i class="far fa-clock"></i> October 15, 2020</small>-->
+                </div>
+                <div class="card-footer">
+                 <div class="media">
+        <img class="mr-3 rounded-circle" src="images/la-qui-lo.jpg" alt="Generic placeholder image" style="max-width:50px">
+        <div class="media-body">
+          <h6 class="my-0 text-white d-block">La Quinta</h6>
+           <small>@QuesoLaQuinta</small>
+        </div>
+      </div>
+                </div>
+              </div>
+            </div></div>
+        <div class="col-md-4"><div class="card text-white card-has-bg click-col" style="background-image:url('https://thumbs.dreamstime.com/b/campesino-en-el-noreste-brasile%C3%B1o-el-brasil-43970531.jpg');">
+               <img class="card-img d-none" src="contact.php" alt="Centro de Distribución">
+              <div class="card-img-overlay d-flex flex-column">
+               <div class="card-body">
+                  <small class="card-meta mb-2">¡Unete!</small>
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">Centro de Distrubición</a></h4>
+                 <!-- <small><i class="far fa-clock"></i> October 15, 2020</small>-->
+                </div>
+                <div class="card-footer">
+                 <div class="media">
+        <img class="mr-3 rounded-circle" src="images/la-qui-lo.jpg" alt="Generic placeholder image" style="max-width:50px">
+        <div class="media-body">
+          <h6 class="my-0 text-white d-block">La Quinta</h6>
+           <small>@QuesoLaQuinta</small>
+        </div>
+      </div>
+                </div>
+              </div>
+            </div></div>
+        
+      </div>
+        
+      </div>
+      </section>
+
+    <!--fin Cards proveedores-->
+    <h3 id="ht-a">¿Te interesa ser proveedor?</h3>
+    <h5 id="ht-b">Aquí puedes hacerlo</h5>
+    <a href="provedor.php" class="btn btn-primary" >Unirme</a>
+    </div >
+    <br>
+    <br>
+    
+	
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Productos</h4>
+							<li><a href="#">Quesos Oaxaca</a></li>
+							<li><a href="#">Quesos Panela</a></li>
+							<li><a href="#">Quesos Ranchero</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Acerca de</h4>
+							<li><a href="#">¿Quién somos?</a></li>
+							<li><a href="#">Preguntas frecuentes</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Atencion al cliente</h4>
+							<li><a href="#">Contáctanos</a></li>
+							<li><a href="#">Envío y seguimiento de pedidos </a></li>
+							<li><a href="#">Devoluciones fáciles </a></li>
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="pinterest"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           
+		            </div>
+					  <dl id="sample" class="dropdown">
+				        <dt><a href="#"><span>Change Region</span></a></dt>
+				        <dd>
+				            <ul>
+				                <li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span class="value">AS</span></a></li>
+				                <li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
+				                <li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span class="value">NZ</span></a></li>
+				                <li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
+				                <li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span class="value">UK</span></a></li>
+				                <li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
+				            </ul>
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+</body>
+<!-- Código de instalación Cliengo para www.Laquita.com --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/6195d392f1a7b9002aa251a9/6195dca4dbe0c3002a59c535.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
+</html>
