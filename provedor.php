@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Free Snow Bootstrap Website Template | Contact :: w3layouts</title>
+<title>La Quinta</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/estilo.css">
@@ -151,7 +151,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			
 			<div class="row">
-				<div class="col-md-12 contact"><h2>Quieres ser nuestro proveedor?</h2>
+				<div class="col-md-12 contact"><h2>¿Quieres ser nuestro proveedor?</h2>
 					  <hr>
 					  <h3>Escribenos sobre tu empresa</h3>
 				  <form method="post">
@@ -161,9 +161,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                      	<input type="text" placeholder="Nombre Completo" name="name" required="">
 						<input type="text" placeholder="email" name="Email" required="" value="salasrayasdiego13@gmail.com" disabled>
 						<input type="text" placeholder="Tipo de Local co el que cuentas" name="Tlocal" required="">
-						<input type="text" placeholder="Numero de Telefono" name="Telefono" required="">  
+						<input type="text" placeholder="Número de Teléfono" name="Telefono" required="">  
 						<input type="text" placeholder="Ciudad de Residencia" name="Ciudad" required="">  
-						<input type="text" placeholder="Por que el interes en vender nuestros quesos?" name="interes" required="">
+						<input type="text" placeholder="¿Por qué el interes en vender nuestros quesos?" name="interes" required="">
 					</div>
 					<div class="text">
 	                   <textarea placeholder="Comentarios" name="Comentarios"></textarea>
